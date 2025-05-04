@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Hub</title>
+    <title>Portfolio Hub - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,11 +11,11 @@
         <div class="logo">Portfolio<span>Hub</span></div>
         <nav id="nav">
             <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="mobile-menu" onclick="toggleMenu()">&#9776;</div>
         </nav>
@@ -25,7 +25,7 @@
         <section id="home" class="section hero active">
             <div class="hero-content">
                 <div class="hero-image-container">
-<img src="pfp.jpg" class="hero-image">
+                    <img src="pfp.jpg" class="hero-image">
                 </div>
                 <p class="greeting fade-in delay-1">Welcome to my portfolio</p>
                 <h1 class="fade-in delay-1">Your Name</h1>
@@ -39,171 +39,8 @@
                 </div>
                 
                 <p class="fade-in delay-3">Welcome to my professional portfolio! I'm passionate about creating beautiful, functional, and user-friendly websites. With years of experience in web development and design, I bring creative ideas to life through clean code and modern aesthetics.</p>
-            </div>
-        </section>
-
-        <section id="about" class="section">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-            </div>
-            <p>Here you can find more information about who I am, my background, and what I do.</p>
-            
-            <div class="stats-container">
-                <div class="stat-card">
-                    <h4>Name</h4>
-                    <p>Your Name</p>
-                </div>
-                <div class="stat-card">
-                    <h4>Age</h4>
-                    <p>25 Years</p>
-                </div>
-                <div class="stat-card">
-                    <h4>Location</h4>
-                    <p>City, Country</p>
-                </div>
-                <div class="stat-card">
-                    <h4>Experience</h4>
-                    <p>5+ Years</p>
-                </div>
-                <div class="stat-card">
-                    <h4>Education</h4>
-                    <p>Bachelor's in Computer Science</p>
-                </div>
-                <div class="stat-card">
-                    <h4>Languages</h4>
-                    <p>English, Spanish</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section">
-            <div class="section-header">
-                <h2 class="section-title">My Skills</h2>
-            </div>
-            <p>These are the technologies and skills I've mastered throughout my career.</p>
-            
-            <div class="skills-container">
-                <div class="skill-item">
-                    <div class="skill-icon">💻</div>
-                    <div class="skill-name">HTML5</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 95%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">🎨</div>
-                    <div class="skill-name">CSS3</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 90%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">⚙️</div>
-                    <div class="skill-name">JavaScript</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 85%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">⚛️</div>
-                    <div class="skill-name">React</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 80%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">🔄</div>
-                    <div class="skill-name">Node.js</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 75%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">🛢️</div>
-                    <div class="skill-name">MongoDB</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">🎭</div>
-                    <div class="skill-name">UI/UX Design</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 85%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">🔐</div>
-                    <div class="skill-name">WordPress</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 80%;"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="hobbies" class="section">
-            <div class="section-header">
-                <h2 class="section-title">My Hobbies</h2>
-            </div>
-            <p>Besides coding, here are some activities I enjoy in my free time.</p>
-            
-            <div class="hobby-cards">
-                <div class="hobby-card">
-                    <div class="hobby-icon">🎮</div>
-                    <h3 class="hobby-title">Gaming</h3>
-                    <p>I enjoy playing strategy and adventure games that challenge my problem-solving skills.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">📚</div>
-                    <h3 class="hobby-title">Reading</h3>
-                    <p>I'm an avid reader of science fiction, fantasy, and technical books.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">🏃</div>
-                    <h3 class="hobby-title">Running</h3>
-                    <p>I run regularly to stay fit and clear my mind. I've completed several half-marathons.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">🎵</div>
-                    <h3 class="hobby-title">Music</h3>
-                    <p>I play guitar and enjoy attending live concerts and music festivals.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">✈️</div>
-                    <h3 class="hobby-title">Travel</h3>
-                    <p>Exploring new cultures, cuisines, and landscapes is one of my greatest passions.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">📷</div>
-                    <h3 class="hobby-title">Photography</h3>
-                    <p>I love capturing moments and scenes through my camera lens.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="section-header">
-                <h2 class="section-title">Contact Me</h2>
-            </div>
-            <p>Interested in working together? Feel free to reach out!</p>
-            
-            <div class="stats-container">
-                <div class="stat-card">
-                    <div class="hobby-icon">📧</div>
-                    <h4>Email</h4>
-                    <p>your.email@example.com</p>
-                </div>
-                <div class="stat-card">
-                    <div class="hobby-icon">📱</div>
-                    <h4>Phone</h4>
-                    <p>+1 (555) 123-4567</p>
-                </div>
-                <div class="stat-card">
-                    <div class="hobby-icon">🌎</div>
-                    <h4>Website</h4>
-                    <p>www.yourwebsite.com</p>
-                </div>
+                
+                <a href="about.html" class="btn fade-in delay-3">Learn More About Me</a>
             </div>
         </section>
     </main>
