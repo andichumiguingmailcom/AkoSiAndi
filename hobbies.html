@@ -3,86 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Hub - Hobbies</title>
+    <title>My Portfolio - Hobbies</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Portfolio<span>Hub</span></div>
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="hobbies.html" class="active">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="mobile-menu" onclick="toggleMenu()">&#9776;</div>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">My Portfolio</div>
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Personal</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="hobbies.html" class="active">Hobbies</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="social.html">Social Media</a></li>
+                    <li><a href="education.html">Education</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section id="hobbies" class="section active">
-            <div class="section-header">
-                <h2 class="section-title">My Hobbies</h2>
-            </div>
-            <p>Besides coding, here are some activities I enjoy in my free time that keep me balanced and inspired.</p>
-            
-            <div class="hobby-cards">
-                <div class="hobby-card">
-                    <div class="hobby-icon">🎮</div>
-                    <h3 class="hobby-title">Gaming</h3>
-                    <p>I enjoy playing strategy and adventure games that challenge my problem-solving skills. My favorite games include The Legend of Zelda series, Civilization, and indie puzzle games that make me think outside the box.</p>
+        <main>
+            <section class="hobbies">
+                <h1>My Hobbies</h1>
+                
+                <div class="hobby-cards">
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-badminton"></i>
+                        </div>
+                        <h2>Badminton</h2>
+                        <p>
+                            Badminton is one of my favorite sports activities. I enjoy the fast-paced nature of the game and the physical agility it requires. Playing badminton regularly helps me maintain physical fitness while also providing an enjoyable way to relieve stress. The strategic aspects of the game, combined with its social nature, make it a perfect recreational activity for me.
+                        </p>
+                    </div>
+                    
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-chess"></i>
+                        </div>
+                        <h2>Chess</h2>
+                        <p>
+                            Chess is a hobby that stimulates my mind and challenges my strategic thinking abilities. I appreciate the deep complexity of the game and how it requires careful planning, foresight, and adaptability. Whether playing against friends or online opponents, each match offers a unique mental workout and opportunity to improve my critical thinking skills. Chess teaches patience and the importance of considering consequences before making decisions.
+                        </p>
+                    </div>
+                    
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h2>Mobile Games</h2>
+                        <p>
+                            Mobile gaming provides me with entertainment and mental stimulation while on the go. I enjoy a variety of genres including strategy games, puzzles, and adventure games. Mobile games offer a convenient way to unwind during breaks or commutes. They also help me stay connected with friends through multiplayer options and gaming communities. I particularly enjoy games that combine entertainment with problem-solving challenges.
+                        </p>
+                    </div>
                 </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">📚</div>
-                    <h3 class="hobby-title">Reading</h3>
-                    <p>I'm an avid reader of science fiction, fantasy, and technical books. Some of my favorite authors include Isaac Asimov, Brandon Sanderson, and Neal Stephenson. I try to read at least one book per month to expand my horizons.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">🏃</div>
-                    <h3 class="hobby-title">Running</h3>
-                    <p>I run regularly to stay fit and clear my mind. I've completed several half-marathons and am currently training for my first full marathon. Running helps me maintain focus and provides a great opportunity to listen to podcasts and audiobooks.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">🎵</div>
-                    <h3 class="hobby-title">Music</h3>
-                    <p>I play guitar and enjoy attending live concerts and music festivals. I'm particularly fond of indie rock and classical music. On weekends, you might find me jamming with friends or practicing new songs to add to my repertoire.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">🍳</div>
-                    <h3 class="hobby-title">Cooking</h3>
-                    <p>Experimenting with new recipes and cuisines has become a passion of mine. I especially enjoy making Italian and Thai dishes, and I'm currently mastering the art of homemade bread baking. Sharing meals with friends and family brings me joy.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">🧩</div>
-                    <h3 class="hobby-title">Puzzles</h3>
-                    <p>I love challenging my mind with puzzles of all types - from jigsaw puzzles to escape rooms. I find that solving puzzles helps me develop better problem-solving skills that I can apply to my work in web development.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">🌿</div>
-                    <h3 class="hobby-title">Gardening</h3>
-                    <p>Tending to plants gives me a sense of peace and accomplishment. I maintain a small herb garden and several houseplants. Watching something grow from seed to maturity provides a wonderful counterbalance to the digital nature of my work.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">🎨</div>
-                    <h3 class="hobby-title">Digital Art</h3>
-                    <p>Creating digital illustrations and designs has become both a hobby and a complementary skill to my web development work. I enjoy experimenting with different styles and techniques to enhance my creative expression.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer>
-        <div class="social-links">
-            <a href="#" class="social-link">f</a>
-            <a href="#" class="social-link">in</a>
-            <a href="#" class="social-link">ig</a>
-            <a href="#" class="social-link">tw</a>
-            <a href="#" class="social-link">gh</a>
-        </div>
-        <p class="copyright">© 2025 Your Name. All Rights Reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 Your Portfolio. All rights reserved.</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>

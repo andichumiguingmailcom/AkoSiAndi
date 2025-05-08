@@ -3,58 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Hub - Home</title>
+    <title>My Portfolio - Personal</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Portfolio<span>Hub</span></div>
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="mobile-menu" onclick="toggleMenu()">&#9776;</div>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="section hero active">
-            <div class="hero-content">
-                <div class="hero-image-container">
-                    <img src="pfp.jpg" class="hero-image">
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">My Portfolio</div>
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <p class="greeting fade-in delay-1">Welcome to my portfolio</p>
-                <h1 class="fade-in delay-1">Your Name</h1>
-                <h2 class="fade-in delay-2">Web Developer & Designer</h2>
-                
-                <div class="category-tags fade-in delay-2">
-                    <span class="category-tag">HTML</span>
-                    <span class="category-tag">CSS</span>
-                    <span class="category-tag">JavaScript</span>
-                    <span class="category-tag">React</span>
-                </div>
-                
-                <p class="fade-in delay-3">Welcome to my professional portfolio! I'm passionate about creating beautiful, functional, and user-friendly websites. With years of experience in web development and design, I bring creative ideas to life through clean code and modern aesthetics.</p>
-                
-                <a href="about.html" class="btn fade-in delay-3">Learn More About Me</a>
-            </div>
-        </section>
-    </main>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Personal</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="social.html">Social Media</a></li>
+                    <li><a href="education.html">Education</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <footer>
-        <div class="social-links">
-            <a href="#" class="social-link">f</a>
-            <a href="#" class="social-link">in</a>
-            <a href="#" class="social-link">ig</a>
-            <a href="#" class="social-link">tw</a>
-            <a href="#" class="social-link">gh</a>
-        </div>
-        <p class="copyright">© 2025 Your Name. All Rights Reserved.</p>
-    </footer>
+        <main>
+            <section class="personal">
+                <div class="personal-content">
+                    <div class="profile-image">
+                        <img src="/api/placeholder/400/400" alt="Profile Picture" width="250" height="250">
+                    </div>
+                    <div class="personal-info">
+                        <h1>Your Name</h1>
+                        <p class="title">Web Developer & Student</p>
+                        <div class="contact-info">
+                            <p><i class="fas fa-envelope"></i> youremail@example.com</p>
+                            <p><i class="fas fa-phone"></i> +1234567890</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Your Location</p>
+                        </div>
+                        <div class="bio">
+                            <h2>About Me</h2>
+                            <p>Hello! I'm a passionate web developer and student currently studying at DLSJBC. I love creating beautiful and functional websites that provide great user experiences. My journey in web development has been exciting, and I'm always eager to learn new technologies and techniques.</p>
+                        </div>
+                        <div class="quote">
+                            <blockquote>
+                                "The hardest choices require the strongest wills."
+                                <cite>- Thanos</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Your Portfolio. All rights reserved.</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>

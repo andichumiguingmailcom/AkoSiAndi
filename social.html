@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Social Media</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">My Portfolio</div>
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Personal</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="social.html" class="active">Social Media</a></li>
+                    <li><a href="education.html">Education</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="social-media">
+                <h1>Connect With Me</h1>
+                
+                <div class="social-cards">
+                    <div class="social-card facebook">
+                        <div class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <h2>Facebook</h2>
+                        <p>Follow me on Facebook for personal updates and insights.</p>
+                        <a href="#" class="social-link">Visit Profile</a>
+                    </div>
+                    
+                    <div class="social-card tiktok">
+                        <div class="social-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                        <h2>TikTok</h2>
+                        <p>Check out my TikTok for short video content and creative clips.</p>
+                        <a href="#" class="social-link">Visit Profile</a>
+                    </div>
+                    
+                    <div class="social-card instagram">
+                        <div class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h2>Instagram</h2>
+                        <p>Follow my Instagram for visual updates and moments from my life.</p>
+                        <a href="#" class="social-link">Visit Profile</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Me a Message</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Your Portfolio. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

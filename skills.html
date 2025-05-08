@@ -3,179 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Hub - Skills</title>
+    <title>My Portfolio - Skills</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Portfolio<span>Hub</span></div>
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html" class="active">Skills</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="mobile-menu" onclick="toggleMenu()">&#9776;</div>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">My Portfolio</div>
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Personal</a></li>
+                    <li><a href="skills.html" class="active">Skills</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="social.html">Social Media</a></li>
+                    <li><a href="education.html">Education</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section id="skills" class="section active">
-            <div class="section-header">
-                <h2 class="section-title">My Skills</h2>
-            </div>
-            
-            <div class="skills-filter">
-                <button class="filter-btn active" data-filter="tech">Technical Skills</button>
-                <button class="filter-btn" data-filter="life">Life Skills</button>
-            </div>
-            
-            <div class="skills-wrapper">
-                <!-- Technical Skills -->
-                <div class="skills-container tech-skills active">
-                    <h3 class="skills-subtitle">Technical Skills</h3>
-                    <p>These are the technologies and skills I've mastered throughout my career.</p>
-                    
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">💻</div>
-                            <div class="skill-name">HTML5</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 95%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🎨</div>
-                            <div class="skill-name">CSS3</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 90%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">⚙️</div>
-                            <div class="skill-name">JavaScript</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">⚛️</div>
-                            <div class="skill-name">React</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 80%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🔄</div>
-                            <div class="skill-name">Node.js</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 75%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🛢️</div>
-                            <div class="skill-name">MongoDB</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 70%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🎭</div>
-                            <div class="skill-name">UI/UX Design</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🔐</div>
-                            <div class="skill-name">WordPress</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 80%;"></div>
-                            </div>
-                        </div>
+        <main>
+            <section class="skills">
+                <h1>My Skills</h1>
+                
+                <div class="skill-item">
+                    <h2>Code Arrangements</h2>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85%"></div>
                     </div>
+                    <p class="skill-description">
+                        I have a strong ability to write clean, organized, and efficient code. My approach to coding focuses on readability, maintainability, and following best practices. I take pride in structuring my projects logically and ensuring that my code is well-documented for ease of understanding and future modifications.
+                    </p>
                 </div>
                 
-                <!-- Life Skills -->
-                <div class="skills-container life-skills">
-                    <h3 class="skills-subtitle">Life Skills</h3>
-                    <p>Beyond technical abilities, these are the personal skills that help me succeed in both work and life.</p>
-                    
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">🗣️</div>
-                            <div class="skill-name">Communication</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 90%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🧠</div>
-                            <div class="skill-name">Problem Solving</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 95%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">👥</div>
-                            <div class="skill-name">Teamwork</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">⏰</div>
-                            <div class="skill-name">Time Management</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 80%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🎯</div>
-                            <div class="skill-name">Goal Setting</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">💡</div>
-                            <div class="skill-name">Creativity</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 90%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🔍</div>
-                            <div class="skill-name">Critical Thinking</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🤝</div>
-                            <div class="skill-name">Leadership</div>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 75%;"></div>
-                            </div>
-                        </div>
+                <div class="skill-item">
+                    <h2>Adaptability</h2>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90%"></div>
                     </div>
+                    <p class="skill-description">
+                        I excel at adapting to new technologies, environments, and challenges. In the ever-evolving field of web development, I quickly learn new programming languages, frameworks, and tools to stay current with industry standards. My adaptability extends to working with diverse teams and adjusting to changing project requirements.
+                    </p>
                 </div>
-            </div>
-        </section>
-    </main>
+                
+                <div class="skill-item">
+                    <h2>Keen Observation</h2>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80%"></div>
+                    </div>
+                    <p class="skill-description">
+                        My attention to detail allows me to notice subtle issues and opportunities for improvement in projects. This skill is particularly valuable for debugging, user interface design, and quality assurance. I can identify patterns, inconsistencies, and potential problems before they become significant issues, leading to more polished final products.
+                    </p>
+                </div>
+            </section>
+        </main>
 
-    <footer>
-        <div class="social-links">
-            <a href="#" class="social-link">f</a>
-            <a href="#" class="social-link">in</a>
-            <a href="#" class="social-link">ig</a>
-            <a href="#" class="social-link">tw</a>
-            <a href="#" class="social-link">gh</a>
-        </div>
-        <p class="copyright">© 2025 Your Name. All Rights Reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 Your Portfolio. All rights reserved.</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
